@@ -1,19 +1,22 @@
 import React from 'react';
+import ReactScroll from "./Components/ReactScroll/ReactScroll.jsx"
 
-var App = React.createClass({
+class App extends React.Component{
 
-  getInitialState: function() {
+  getInitialState () {
     return {
     };
-  },
+  }
 
 
-	render: function(){
+	render (){
 		return (
 			<div>
+        Hi there
+        <ReactScroll />
 			</div>
 		);
 	}
-});
+}
 
 export default App;
