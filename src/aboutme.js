@@ -7,7 +7,6 @@ class AboutMe extends React.Component{
 			<div>
 		        About me <br />
 		        This is sunil chaudhary
-		        {/*<ReactScroll />*/}
 			</div>
 		);
 	}

@@ -7,7 +7,6 @@ class IndexF extends React.Component{
 			<div>
 		        Index <br/>
 		        This is index route
-		        {/*<ReactScroll />*/}
 			</div>
 		);
 	}
