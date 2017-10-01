@@ -6,15 +6,20 @@ import IndexF from './src/index.js';
 import AboutMe from './src/aboutme.js';
 import ReactImageGallery from "./src/component/React-image-gallery/ReactImageGallery.jsx"
 import ReactScroll from "./src/component/ReactScroll/ReactScroll.jsx"
-
+import {Provider} from 'react-redux';
+import store from './src/store.js';
+import ReactRedux from "./src/component/Redux-Store/Application.js"
 ReactDOM.render(
-	<Router history={browserHistory}>
-        <IndexRoute component={IndexF} />
-		<Route path="/" component={IndexF} />
-		<Route path={"index"} component={IndexF} />
-		<Route path={"about"} component={AboutMe} />
-		<Route path={"image"} component={ReactImageGallery} />
-		<Route path={"scroll"} component={ReactScroll} />
-	</Router>, 
+	<Provider store={store}>
+		<Router history={browserHistory}>
+	        <IndexRoute component={IndexF} />
+			<Route path="/" component={IndexF} />
+			<Route path={"index"} component={IndexF} />
+			<Route path={"about"} component={AboutMe} />
+			<Route path={"image"} component={ReactImageGallery} />
+			<Route path={"scroll"} component={ReactScroll} />
+			<Route path={"redux"} component={ReactRedux} />
+		</Router>
+	</Provider>, 
 	document.getElementById('app')
 );
