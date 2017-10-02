@@ -38,13 +38,13 @@ const browserConfig = {
         test: /js$/,
         exclude: /(node_modules)/,
         loader: "babel-loader",
-        query: { presets: ["react-app", "es2016", "es2015"] }
+        query: { presets: ["react", "es2016", "es2015"] }
       },
       {
         test: /jsx?$/,
         exclude: /(node_modules)/,
         loader: "babel-loader",
-        query: { presets: ["react-app", "es2016", "es2015"] }
+        query: { presets: ["react", "es2016", "es2015"] }
       }
     ]
   },
@@ -87,13 +87,13 @@ const serverConfig = {
         test: /js$/,
         exclude: /(node_modules)/,
         loader: "babel-loader",
-        query: { presets: ["react-app", "es2016", "es2015"] }
+        query: { presets: ["react", "es2016", "es2015"] }
       },
       {
         test: /jsx?$/,
         exclude: /(node_modules)/,
         loader: "babel-loader",
-        query: { presets: ["react-app", "es2016", "es2015"] }
+        query: { presets: ["react", "es2016", "es2015"] }
       }
     ]
   }
