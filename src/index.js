@@ -10,7 +10,7 @@ class IndexF extends React.Component{
 		        This is index route
 		        <button onClick={()=>{
 		        	console.log("yo yo")
-		        	browserHistory.push("/about")
+		        	browserHistory.push("/redux")
 		        }}>SUNIL</button>
 			</div>
 		);
