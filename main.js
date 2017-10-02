@@ -10,16 +10,6 @@ import {Provider} from 'react-redux';
 import store from './src/store.js';
 import ReactRedux from "./src/component/Redux-Store/Application.js"
 ReactDOM.render(
-	<Provider store={store}>
-		<Router history={browserHistory}>
-	        <IndexRoute component={IndexF} />
-			<Route path="/" component={IndexF} />
-			<Route path={"index"} component={IndexF} />
-			<Route path={"about"} component={AboutMe} />
-			<Route path={"image"} component={ReactImageGallery} />
-			<Route path={"scroll"} component={ReactScroll} />
-			<Route path={"redux"} component={ReactRedux} />
-		</Router>
-	</Provider>, 
+	<App/>, 
 	document.getElementById('app')
 );

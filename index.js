@@ -88,21 +88,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_reactDom2.default.render(_react2.default.createElement(
-		_reactRedux.Provider,
-		{ store: _store2.default },
-		_react2.default.createElement(
-			_reactRouter.Router,
-			{ history: _reactRouter.browserHistory },
-			_react2.default.createElement(_reactRouter.IndexRoute, { component: _index2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: '/', component: _index2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: "index", component: _index2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: "about", component: _aboutme2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: "image", component: _ReactImageGallery2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: "scroll", component: _ReactScroll2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: "redux", component: _Application2.default })
-		)
-	), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
 
 /***/ }),
 /* 1 */
