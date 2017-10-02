@@ -9,7 +9,9 @@ import ReactScroll from "./src/component/ReactScroll/ReactScroll.js"
 import {Provider} from 'react-redux';
 import store from './src/store.js';
 import ReactRedux from "./src/component/Redux-Store/Application.js"
+import { BrowserRouter } from "react-router-dom"
+
 ReactDOM.render(
-	<App/>, 
+	<App/>,
 	document.getElementById('app')
 );
