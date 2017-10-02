@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.jsx';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import IndexF from './src/index.js';
 import AboutMe from './src/aboutme.js';
-import ReactImageGallery from "./src/component/React-image-gallery/ReactImageGallery.jsx"
-import ReactScroll from "./src/component/ReactScroll/ReactScroll.jsx"
+import ReactImageGallery from "./src/component/React-image-gallery/ReactImageGallery.js"
+import ReactScroll from "./src/component/ReactScroll/ReactScroll.js"
 import {Provider} from 'react-redux';
 import store from './src/store.js';
 import ReactRedux from "./src/component/Redux-Store/Application.js"
