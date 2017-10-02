@@ -12,6 +12,8 @@ import ReactRedux from "./src/component/Redux-Store/Application.js"
 import { BrowserRouter } from "react-router-dom"
 
 ReactDOM.render(
-	<App/>,
+	<BrowserRouter>
+	<App/>
+	</BrowserRouter>,
 	document.getElementById('app')
 );

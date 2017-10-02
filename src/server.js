@@ -43,7 +43,7 @@ app.get("*", (req, res) => {
       </head>
 
       <body>
-        <div id="root">${html}</div>
+        <div id="app">${html}</div>
         <script>
           window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
         </script>
