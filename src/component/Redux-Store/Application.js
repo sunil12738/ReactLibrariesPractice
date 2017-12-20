@@ -9,6 +9,7 @@ class Home extends React.Component{
 		this.clicked = this.clicked.bind(this)
 		this.increase = this.increase.bind(this)
 		this.decrease = this.decrease.bind(this)
+		this.makeApiCallUsingThunk = this.makeApiCallUsingThunk.bind(this)
 	}
 
 	clicked(){
@@ -20,6 +21,10 @@ class Home extends React.Component{
 	decrease() {
 		this.props.decrease()
 	}
+	makeApiCallUsingThunk() {
+		console.log(this.props)
+		this.props.getGithubData()
+	}
 
 	render (){
 		console.log(this.props)
@@ -28,7 +33,9 @@ class Home extends React.Component{
 				<div>Current Value: {this.props.state.counter}</div>
 		        {/*<button onClick={this.clicked}>CLICK ME</button><br/>*/}
 		        <button onClick={this.increase}>INCREASE</button><br/>
-		        <button onClick={this.decrease}>DECREASE</button><br/>
+						<button onClick={this.decrease}>DECREASE</button><br/>
+		        <button onClick={this.makeApiCallUsingThunk}>MAKE API CALL USING THUNK</button><br/>
+						<ul>{this.props.state.data.map((x) => {return <li>{x.login + " " + x.url}</li>})}</ul>
 			</div>
 		);
 	}
@@ -53,5 +60,12 @@ const dispatch = {
 	iAmClicked: action.iAmClicked,
 	increase: action.increase,
 	decrease: action.decrease,
+	getGithubData: action.getGithubData
 }
-export default connect(mapStateToProps, { iAmClicked: action.iAmClicked, increase: action.increase, decrease: action.decrease })(Home);
+export default connect(mapStateToProps,
+	{
+		iAmClicked: action.iAmClicked,
+		increase: action.increase,
+		decrease: action.decrease,
+		getGithubData: action.getGithubData,
+	})(Home);
