@@ -12,3 +12,6 @@ Following libraries are implemented in this project
 
 - Server Side Rendering
 - Asynch Actions
+- es6 syntax support
+- Redux Saga
+- Unit testing
