@@ -6,6 +6,7 @@ Following libraries are implemented in this project
 - React Scroll
 - React Image Gallery
 - React Redux
+- Redux Thunk
 
 ## Upcoming
 
